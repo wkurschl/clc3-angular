@@ -1,8 +1,16 @@
 # Angular 6 Web App Example for Node.js using Google App Engine
 
-The example code stems from the Angular documentation for attribute directives (https://angular.io/guide/attribute-directives). It has been modified on the following 3 places, so that it run sucessfully on the Google App Engine in a custom docker container with Node.js.
+The example code stems from the Angular documentation for attribute directives (https://angular.io/guide/attribute-directives). It has been modified so that it run sucessfully on the Google App Engine in a custom docker container with Node.js.
 
+The modified files are:
+- Dockerfile
+- app.yaml
+- package.json
 
+Explanation:
+ad) Dockerfile. We build our own custom docker container which provides the necessary node.js environment.
+ad) app.yaml. Instead of using the nodejs environment provided by Google, we use our own custom docker container.
+ad) package.json. Since we had dependencies issues when running the code, we moved the two lines "@angular/cli": "1.2.0" and "@angular/compiler-cli": "^4.4.7" from the section devDependencies zu dependencies.
 
 
 # AttributeDirectives
