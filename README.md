@@ -1,3 +1,10 @@
+# Angular 6 Web App Example for Node.js using Google App Engine
+
+The example code stems from the Angular documentation for attribute directives (https://angular.io/guide/attribute-directives). It has been modified on the following 3 places, so that it run sucessfully on the Google App Engine in a custom docker container with Node.js.
+
+
+
+
 # AttributeDirectives
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
