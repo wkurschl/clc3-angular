@@ -10,7 +10,7 @@ The modified files are:
 Explanation:
 - Dockerfile. We build our own custom docker container which provides the necessary node.js environment.
 - app.yaml. Instead of using the nodejs environment provided by Google, we use our own custom docker container.
-- package.json. Since we had dependencies issues when running the code, we moved the two lines "@angular/cli": "1.2.0" and "@angular/compiler-cli": "^4.4.7" from the section devDependencies zu dependencies.
+- package.json. Since we had dependencies issues when running the code, we moved the two lines "@angular/cli": "1.2.0" and "@angular/compiler-cli": "^4.4.7" from the section devDependencies to the section dependencies.
 
 
 # AttributeDirectives
